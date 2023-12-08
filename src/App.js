@@ -66,9 +66,6 @@ export default App;
 // 2. hooks must be defined in the functional body and must on top 
 // 3. hooks cannot be conditional // Don’t call Hooks inside loops, conditions, or nested functions
 
-
-
-
 // tasks :
 // 1. Repeat the class and complete pending work 
 // 2. Research about hooks
