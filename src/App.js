@@ -1,32 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./navigation/navigation";
+
 
 function App() {
-// we can use hook here
-
-
-
-// if(true){
-//   useState
-// }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          login added
-        </a>
-      </header>
-    </div>
+   <Navigation/>
   );
 
 }
@@ -79,3 +57,103 @@ export default App;
 // 3. create a 4 buttons 
 // 4. attach the methods 
 // 5. Each method we need use filter method in js  , filter returns array , that array we will set the state using setState
+
+
+// useState : useState will let you add state in your functional components instead of using class 
+
+
+// state : 
+
+
+
+// useState will accept state variable (data of anything which is changing over time) as a argument  --> initiaze 
+
+// useState will return 2 elements ( current state and updater function )
+
+
+// count : 0
+
+
+// current state  (0)
+
+// updater function --> to change the current state in functional component we must use updater function
+
+
+// 11-dec-2023
+
+
+// forms :
+
+// input ---> types : text , radio , checkbox , password , email ..
+
+
+
+// in react we will handle forms in  2 ways 
+
+// 1. Uncontrolled components 
+
+// 2. Controlled components
+
+
+// Uncontrolled components  : Uncontrolled components are used in react while writing form  where data will be controlled by the dom 
+
+// disadvantage :
+// 1. field validations were not possible 
+
+
+
+
+
+// Controlled components : controlled components are used in react while writing form where data will be controlled by the react  
+// advantage : field validations were possible 
+
+
+
+// routing : to navigate btw the pages easily and more readable way 
+
+// react-router-dom ----> this is the library which helps react to navigate or switching btw pages 
+
+
+// stack 
+
+
+// pre login screens 
+
+// 1. sign up 
+// 2. sign in 
+// 3. forgot password 
+
+// post login routes 
+
+// 1. home 
+// 2. contact us 
+// 3. setting 
+// 4. about 
+
+
+// tasks :
+// 1. Repeat the class 
+// 2. Fill the screens with content (login Form, register form , forgot password)
+// 3.Todo (CRUD)
+// 4. add button and genearate circles , when we click on circle color has to Change , if we click again revert back  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
