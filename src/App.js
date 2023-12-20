@@ -1,10 +1,28 @@
+import { createContext, useEffect, useState } from "react";
 import Navigation from "./navigation/navigation";
 
 
+ 
+export const UserNameContext=createContext()
+
+
+export const DarkContext=createContext()
 function App() {
+  const [name]=useState("sai")
+
+
+
+
 
   return (
+    
+
+
+
+    <UserNameContext.Provider  value={name} > 
    <Navigation/>
+   </UserNameContext.Provider>
+
   );
 
 }
@@ -136,6 +154,124 @@ export default App;
 // 2. Fill the screens with content (login Form, register form , forgot password)
 // 3.Todo (CRUD)
 // 4. add button and genearate circles , when we click on circle color has to Change , if we click again revert back  
+
+
+
+// tasks
+
+// 1. repeat the class 
+// 2. fill the screens with content 
+
+
+
+
+
+// Use Effect :
+
+// it is a hook in react which primarily used to cause or perform the side effects in  functional based components 
+
+// side effects:
+
+// 1.Http req 
+// 2.Dom manipulations 
+//3.to trigger  event listeners 
+// 3.Timing events 
+// 4.Any subscribtions
+
+// compared to class based components useEffect is replacement of 3 methods in life cycle 
+
+// 1. Component did mount (once in a life cycle)
+// 2. Component did update (whenever state or prop updates)
+// 3. component will unmount (to prevent memory leak(cleanup))
+
+// syntax : useEffect(callbackfunction,array)
+// array-> dependency array 
+
+// useEffect(()=>{},[])
+
+
+
+
+
+
+// context api : it is a build in concept in react which is used to share the state or data globally (we can avoid the prop)
+
+
+// total 3 steps for context creation in functional component 
+
+
+
+// 1. Create a context 
+// 2. Wrap the context with the provider with value prop 
+// 3. use the context using useContext hook 
+
+
+
+
+
+// 5 sec 
+
+// 1 sec ---> 11% 
+
+
+
+// Optimization : in increase app performance with out much loading time
+
+
+// users will increase 
+
+
+
+
+// 1. react.memo (hoc)
+
+
+// memorization tech 
+
+
+// 1. use Memo --> value 
+
+
+// milk ----> 50 rupee 
+//  day 1 ---> 2 milk --> 100 
+//  day 2 ---> 2 milk --> 100 
+//  day 3 ---> 2 milk --> 100 
+//  day 4 ---> 2 milk --> 100 
+//  day 5 ---> 3 milk ---> 150 
+
+
+
+// 2. useCallback ---> function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

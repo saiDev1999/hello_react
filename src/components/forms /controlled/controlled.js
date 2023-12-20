@@ -1,10 +1,14 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { LoginDetails } from "../../../navigation/navigation"
 
 
 
 const Controlled = () =>{
     const [username,setUsername]=useState("")
     const [password,setPassword]=useState("")
+
+    const loginObject=useContext(LoginDetails)
+    console.log(loginObject,"loginObject")
 
     const handleUsername= (event)=>{
 
@@ -20,6 +24,11 @@ const Controlled = () =>{
     }
     const handleSubmit = (event)=>{
 event.preventDefault()
+
+
+// atuny0
+
+// 9uQFF1Lh
 
 const details={
     username,
@@ -37,6 +46,11 @@ fetch('https://dummyjson.com/auth/login', {
         alert("invalid login ")
     }else{
         alert("successfull login")
+        loginObject.signIn()
+
+
+
+        // trigger the login flag which is there in the navigation(to change the stack)
     }
 });
 
