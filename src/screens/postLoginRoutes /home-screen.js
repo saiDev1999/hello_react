@@ -2,34 +2,24 @@ import React, { useEffect, useState } from 'react'
 import Header from '../../components/navbar /header'
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
+import useAxios from '../../components/customHooks/useAxios'
+import { PRODUCT_LISTING } from '../../components/customHooks/endPoints'
 
 function HomeScreen() {
 
-    // https://fakestoreapi.com/products
+         const [data,error] =useAxios(PRODUCT_LISTING)
+
+         console.log(data)
+
     const navigate =useNavigate()
-    const[data,setData]=useState([])
-  useEffect(()=>{
-    loadProducts()
-
-  },[])
-
-    const loadProducts =()=>{
-
-        axios.get("https://fakestoreapi.com/products")
-        .then(response=>setData(response.data))
-        .catch(res=>console.error(res))
-    }
+  
     const handleSignOut = ()=>{
         navigate("/login")
 
     }
   return (
     <div>
-
         <Header/>
-
-
-
         {
             data.length>0 ? data.map(element=>{
                 return (
