@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 import React, { useCallback, useState } from 'react'
 import Greet from './greet'
 import Heading from './heading'

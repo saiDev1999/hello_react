@@ -246,6 +246,21 @@ export default App;
 
 
 
+// Custom hooks 
+
+// to reuse the common functuality of the application we prefer to disign our hooks , which we call as custom hooks
+
+// we utilize the existing hooks 
+
+
+// example : axios reusability 
+
+
+
+
+
+
+
 
 
 
